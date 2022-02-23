@@ -1,0 +1,194 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure: checking for cc
+configure: checking whether the C compiler (cc  ) works
+configure: cc -o conftest    conftest.c  1>&5
+conftest.c:4:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(){return(0);}
+^
+1 warning generated.
+configure: checking whether the C compiler (cc  ) is a cross-compiler
+configure: checking whether we are using GNU C
+configure: checking whether cc accepts -g
+configure: checking how to run the C preprocessor
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
+configure: checking for ranlib
+configure: checking for pthread_mutex_lock
+configure: checking for pthread_attr_setstacksize
+configure: checking for msync(MS_ASYNC)
+configure: checking for fstatfs()
+configure: checking for gcc __attribute__
+configure: checking sizeof(long)
+configure: checking for 64-bit void* pointers
+configure: checking for files larger than 4 GBytes
+configure: checking for make
+configure: checking whether make is gmake
+configure: checking for xargs
+configure: checking for wget
+configure: checking for perl
+configure: checking for sendmail
+configure: checking for htpasswd
+configure: checking for rrdtool
+configure: checking for AF_LOCAL
+configure: checking for AF_INET6
+configure: checking for socklen_t
+configure: checking for in_addr_t
+configure: checking for sa_family_t
+configure: checking for in_port_t
+configure: checking for sa_len
+configure: checking for sin6_scope_id
+configure: checking for ANSI C header files
+configure: checking for pid_t
+configure: checking for u_int8_t
+configure: checking for u_int16_t
+configure: checking for u_int32_t
+configure: checking for u_int64_t
+configure: checking need for string.h
+configure: checking whether time.h and sys/time.h may both be included
+configure: checking for strings.h
+configure: checking for paths.h
+configure: checking for sys/cdefs.h
+configure: checking for pthread.h
+configure: checking for arpa/nameser.h
+configure: checking for resolv.h
+configure: checking for utime.h
+configure: checking for ifaddrs.h
+configure: checking for inttypes.h
+configure: checking for histedit.h
+configure: checking for vsyslog
+configure: checking for getipnodebyname
+configure: checking for getipnodebyaddr
+configure: checking for freehostent
+configure: checking for getaddrinfo
+configure: checking for getnameinfo
+configure: checking for freeaddrinfo
+configure: checking for gai_strerror
+configure: checking for hstrerror
+configure: checking for _res
+configure: checking for res_init
+configure: checking for res_query
+configure: checking for dn_expand
+configure: checking for inet_ntop
+configure: checking for inet_pton
+configure: checking for inet_aton
+configure: checking for gethostid
+configure: checking for localtime_r
+configure: checking for gmtime_r
+configure: checking for timegm
+configure: checking for altzone
+configure: checking for futimes
+configure: checking for setpgid
+configure: checking for poll
+configure: checking for strlcpy
+configure: checking for strlcat
+configure: checking for getprogname
+configure: checking for daemon
+configure: checking for siginterrupt
+configure: checking for eaccess
+configure: checking for getifaddrs
+configure: checking for freeifaddrs
+configure: checking for ffsl
+configure: checking for builtin_ffsl()
+configure: checking for el_init in -ledit
+configure: checking for getifaddrs() replacement
+configure: checking for md5.h
+configure: checking for sysconf(_SC_PHYS_PAGES)+sysconf(_SC_PAGESIZE)
+configure: checking for __progname
+configure: checking use FD_SETSIZE to compute NUM_CWFS
+configure: checking run directory
+configure: checking for sysctl(kern.boottime)
+configure: checking for IPv6
+configure: checking for Rsendto
+configure: Makefile is unchanged
+configure: Makefile.inc is unchanged
+configure: cdcc/Makefile is unchanged
+configure: cgi-bin/Makefile is unchanged
+configure: cgi-bin/README is unchanged
+configure: cgi-bin/chgpasswd is unchanged
+configure: cgi-bin/common is unchanged
+configure: cgi-bin/common.pm is unchanged
+configure: cgi-bin/edit-whiteclnt is unchanged
+configure: cgi-bin/list-log is unchanged
+configure: cgi-bin/list-msg is unchanged
+configure: cgi-bin/webuser-notify is unchanged
+configure: ck2ip/Makefile is unchanged
+configure: clntlib/Makefile is unchanged
+configure: dbclean/Makefile is unchanged
+configure: dblist/Makefile is unchanged
+configure: dccd/Makefile is unchanged
+configure: dccd/dump-clients/Makefile is unchanged
+configure: dccifd/Makefile is unchanged
+configure: dccifd/dccif-test/Makefile is unchanged
+configure: dccifd/dccif.pl is unchanged
+configure: dcclib/Makefile is unchanged
+configure: dccm/Makefile is unchanged
+configure: dccproc/Makefile is unchanged
+configure: dccsight/Makefile is unchanged
+configure: dns-helper/Makefile is unchanged
+configure: homedir/Makefile is unchanged
+configure: homedir/dcc_conf is unchanged
+configure: homedir/fix-map is unchanged
+configure: homedir/grey_whitelist is unchanged
+configure: homedir/ids is unchanged
+configure: homedir/make-dcc_conf is unchanged
+configure: homedir/map.txt is unchanged
+configure: homedir/whiteclnt is unchanged
+configure: homedir/whitelist is unchanged
+configure: include/kludge.h is unchanged
+configure: misc/DCC.pm is unchanged
+configure: misc/Makefile is unchanged
+configure: misc/cron-dccd is unchanged
+configure: misc/crontab is unchanged
+configure: misc/dcc-nagios is unchanged
+configure: misc/dcc-stats-collect is unchanged
+configure: misc/dcc-stats-graph is unchanged
+configure: misc/dcc-stats-init is unchanged
+configure: misc/dcc-stats-update is unchanged
+configure: misc/dcc.m4 is unchanged
+configure: misc/fetch-testmsg-whitelist is unchanged
+configure: misc/fetchblack is unchanged
+configure: misc/list-clients is unchanged
+configure: misc/man2html is unchanged
+configure: misc/newwebuser is unchanged
+configure: misc/rcDCC is unchanged
+configure: misc/start-dccd is unchanged
+configure: misc/start-dccifd is unchanged
+configure: misc/start-dccm is unchanged
+configure: misc/start-grey is unchanged
+configure: misc/stats-get is unchanged
+configure: misc/stop-dccd is unchanged
+configure: misc/uninstalldcc is unchanged
+configure: misc/updatedcc is unchanged
+configure: rrd-combine/Makefile is unchanged
+configure: srvrlib/Makefile is unchanged
+configure: thrlib/Makefile is unchanged
+configure: cdcc.8 is unchanged
+configure: dbclean.8 is unchanged
+configure: dblist.8 is unchanged
+configure: dcc.8 is unchanged
+configure: dccd.8 is unchanged
+configure: dccifd.8 is unchanged
+configure: dccm.8 is unchanged
+configure: dccproc.8 is unchanged
+configure: dccsight.8 is unchanged
+configure: cdcc.0 is unchanged
+configure: dbclean.0 is unchanged
+configure: dblist.0 is unchanged
+configure: dcc.0 is unchanged
+configure: dccd.0 is unchanged
+configure: dccifd.0 is unchanged
+configure: dccm.0 is unchanged
+configure: dccproc.0 is unchanged
+configure: dccsight.0 is unchanged
+configure: FAQ.html is unchanged
+configure: INSTALL.html is unchanged
+configure: cdcc.html is unchanged
+configure: dbclean.html is unchanged
+configure: dblist.html is unchanged
+configure: dcc.html is unchanged
+configure: dccd.html is unchanged
+configure: dccifd.html is unchanged
+configure: dccm.html is unchanged
+configure: dccproc.html is unchanged
+configure: dccsight.html is unchanged

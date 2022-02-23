@@ -1,0 +1,11 @@
+# daily DCC server cleanup
+#   Rhyolite Software DCC 1.3.163-1.6 $Revision$
+# Generated automatically from crontab.in by configure.
+
+# if you use more than one DCC server, different start times are best
+#   so that your servers are not all busy cleaning their databases at once.
+15	2	*	*	*	/var/dcc/libexec/cron-dccd
+
+# optionally fetch list of empty messags
+#   Please choose a random day of the week, hour, and minute
+#minute	hour	*	*	day	/var/dcc/libexec/fetch-testmsg-whitelist
