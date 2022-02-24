@@ -2,7 +2,7 @@
 package dcc
 
 // #cgo CFLAGS: -g -Wall
-// #cgo LDFLAGS: -L${SRCDIR}/. -lm -lresolv libdcc.so
+// #cgo LDFLAGS: -L${SRCDIR}/. -ldcc -lm -lresolv
 // #include <stdlib.h>
 // #include <stdio.h>
 // #include "dccmj.h"
