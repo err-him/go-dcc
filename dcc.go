@@ -2,11 +2,11 @@
 package dcc
 
 // #cgo CFLAGS: -g -Wall
-// #cgo LDFLAGS: -L . -lm -lresolv libdccmj.a
+// #cgo LDFLAGS: -L${SRCDIR}/. -lm -lresolv libdcc.so
 // #include <stdlib.h>
 // #include <stdio.h>
 // #include "dccmj.h"
-import "C" //nolint:typecheck // Required for calling c library
+import "C"      //nolint:typecheck // Required for calling c library
 import "unsafe" //nolint:depguard // Required for free the memory
 
 //ChecksumGenerator generates dcc checksum
