@@ -2,7 +2,6 @@
 package dcc
 
 // #cgo CFLAGS: -g -Wno-unused-variable
-// #cgo darwin LDFLAGS: -ldl -Wl,-undefined,dynamic_lookup
 // #cgo LDFLAGS: -L. -ldl -lm -lresolv -ldccmj
 // #include <stdlib.h>
 // #include <stdio.h>
