@@ -1,4 +1,4 @@
-SHARED=libdcc.so
+SHARED=libdccmj.so
 CC = gcc
 CFLAGS = -I./dccsib/include -I./ -fPIC  -Wextra -O2 -g -DGNU-amd64-Linux
 LDFLAGS = -shared -lpthread -lm -lresolv

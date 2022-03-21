@@ -157,7 +157,7 @@ configure: checking for altzone
 configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 Undefined symbols for architecture x86_64:
   "_altzone", referenced from:
-      _main in conftest-52bee4.o
+      _main in conftest-5ea232.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure: failed program was:
@@ -201,7 +201,7 @@ configure: checking for eaccess
 configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 Undefined symbols for architecture x86_64:
   "_eaccess", referenced from:
-      _main in conftest-0c6666.o
+      _main in conftest-c6b655.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure: failed program was:
@@ -266,7 +266,7 @@ configure: checking for Rsendto
 configure: cc -o conftest -g -O2   conftest.c -lm -lresolv -ledit -ltermcap 1>&5
 Undefined symbols for architecture x86_64:
   "_Rsendto", referenced from:
-      _main in conftest-d81215.o
+      _main in conftest-5a3e9b.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure: failed program was:
@@ -281,6 +281,7 @@ Rsendto();
 #endif
 ; return 0; }
 configure: Makefile is unchanged
+configure: Makefile.inc is unchanged
 configure: cdcc/Makefile is unchanged
 configure: cgi-bin/Makefile is unchanged
 configure: cgi-bin/README is unchanged
@@ -301,6 +302,7 @@ configure: dccifd/Makefile is unchanged
 configure: dccifd/dccif-test/Makefile is unchanged
 configure: dccifd/dccif.pl is unchanged
 configure: dcclib/Makefile is unchanged
+configure: dccm/Makefile is unchanged
 configure: dccproc/Makefile is unchanged
 configure: dccsight/Makefile is unchanged
 configure: dns-helper/Makefile is unchanged
