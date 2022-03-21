@@ -8,6 +8,7 @@ package dcc
 // #include <stdlib.h>
 // #include <stdio.h>
 // #include "dccmj.h"
+// #cgo LDFLAGS: -shared
 import "C"      //nolint:depguard,gocritic // Required for calling c library
 import "unsafe" //nolint:depguard,gocritic // Required for free the memory
 
