@@ -2,14 +2,11 @@
 package dcc
 
 // #cgo CFLAGS: -g -Wno-unused-variable
-// #cgo CFLAGS: -W,--no-undefined
-// #cgo linux LDFLAGS: -ldl -Wl,--unresolved-symbols=ignore-all
 // #cgo darwin LDFLAGS: -ldl -Wl,-undefined,dynamic_lookup
-// #cgo LDFLAGS: -L/. -lm -lresolv -ldccmj
+// #cgo LDFLAGS: -L. -ldl -lm -lresolv -ldccmj
 // #include <stdlib.h>
 // #include <stdio.h>
 // #include "dccmj.h"
-// #cgo LDFLAGS: -shared
 import "C"      //nolint:depguard,gocritic // Required for calling c library
 import "unsafe" //nolint:depguard,gocritic // Required for free the memory
 
