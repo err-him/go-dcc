@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: lib-dcc
+  title: lib-dcc
+  description: DCC library, use it for internal distribution of the package only
+  annotations:
+    github.com/project-slug: dtsl/lib-dcc
+  labels:
+    generated: empty
+spec:
+  type: service
+  lifecycle: production
+  owner: core

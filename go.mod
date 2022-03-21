@@ -1,3 +1,3 @@
-module github.com/err-him/go-dcc
+module github.com/DTSL/lib-dcc
 
 go 1.16

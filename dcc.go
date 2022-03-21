@@ -1,13 +1,13 @@
 // Package dcc Package provides dcc common code.
 package dcc
 
-// #cgo CFLAGS: -g -Wall
+// #cgo CFLAGS: -g -Wno-unused-variable
 // #cgo LDFLAGS: -L${SRCDIR}/. -ldcc -lm -lresolv
 // #include <stdlib.h>
 // #include <stdio.h>
 // #include "dccmj.h"
-import "C"      //nolint:typecheck // Required for calling c library
-import "unsafe" //nolint:depguard // Required for free the memory
+import "C"      //nolint:depguard,gocritic // Required for calling c library
+import "unsafe" //nolint:depguard,gocritic // Required for free the memory
 
 //ChecksumGenerator generates dcc checksum
 func ChecksumGenerator(html string) string {

@@ -10,22 +10,66 @@ main(){return(0);}
 1 warning generated.
 configure: checking whether the C compiler (cc  ) is a cross-compiler
 configure: checking whether we are using GNU C
+configure: cc -E conftest.c
 configure: checking whether cc accepts -g
 configure: checking how to run the C preprocessor
 configure: cc -E  conftest.c >/dev/null 2>conftest.out
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for ranlib
 configure: checking for pthread_mutex_lock
+configure: cc -o conftest -g -O2     conftest.c -lm -lresolv  1>&5
 configure: checking for pthread_attr_setstacksize
+configure: cc -o conftest -g -O2     conftest.c -lm -lresolv  1>&5
 configure: checking for msync(MS_ASYNC)
 configure: checking for fstatfs()
+configure: cc -c -g -O2 -I include  conftest.c 1>&5
+In file included from conftest.c:3:
+./srvrlib/istmpfs.c:82:3: error: implicit declaration of function 'dcc_error_msg' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+                dcc_error_msg("fstatfs(%s): %s", nm, ERROR_STR());
+                ^
+./srvrlib/istmpfs.c:82:40: error: implicit declaration of function 'ERROR_STR' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+                dcc_error_msg("fstatfs(%s): %s", nm, ERROR_STR());
+                                                     ^
+2 errors generated.
+configure: failed program was:
+#include "confdefs.h"
+#define DCC_TEST_FSTATFS DCC_FSTATFS_COMPAT_BSD
+#include "srvrlib/istmpfs.c"
+int main() {
+istmpfs(0,0);
+; return 0; }
 configure: checking for gcc __attribute__
+configure: cc -c -g -O2  conftest.c 1>&5
 configure: checking sizeof(long)
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
+conftest.c:6:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+conftest.c:12:40: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+  fprintf(f, "ac_cv_sizeof_long=%d\n", sizeof(long));
+                                ~~     ^~~~~~~~~~~~
+                                %lu
+conftest.c:13:39: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+  fprintf(f, "ac_cv_sizeof_ptr=%d\n", sizeof((void *)0));
+                               ~~     ^~~~~~~~~~~~~~~~~
+                               %lu
+conftest.c:14:41: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+  fprintf(f, "ac_cv_sizeof_off_t=%d\n", sizeof(off_t));
+                                 ~~     ^~~~~~~~~~~~~
+                                 %lu
+conftest.c:15:42: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+  fprintf(f, "ac_cv_sizeof_time_t=%d\n", sizeof(time_t));
+                                  ~~     ^~~~~~~~~~~~~~
+                                  %lu
+5 warnings generated.
 configure: checking for 64-bit void* pointers
 configure: checking for files larger than 4 GBytes
 configure: checking for make
 configure: checking whether make is gmake
 configure: checking for xargs
 configure: checking for wget
+configure: checking for fetch
+configure: checking for curl
 configure: checking for perl
 configure: checking for sendmail
 configure: checking for htpasswd
@@ -39,6 +83,8 @@ configure: checking for in_port_t
 configure: checking for sa_len
 configure: checking for sin6_scope_id
 configure: checking for ANSI C header files
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for pid_t
 configure: checking for u_int8_t
 configure: checking for u_int16_t
@@ -46,62 +92,195 @@ configure: checking for u_int32_t
 configure: checking for u_int64_t
 configure: checking need for string.h
 configure: checking whether time.h and sys/time.h may both be included
+configure: cc -c -g -O2  conftest.c 1>&5
 configure: checking for strings.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for paths.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for sys/cdefs.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for pthread.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for arpa/nameser.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for resolv.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for utime.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for ifaddrs.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for inttypes.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for histedit.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
 configure: checking for vsyslog
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for getipnodebyname
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for getipnodebyaddr
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for freehostent
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for getaddrinfo
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for getnameinfo
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for freeaddrinfo
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for gai_strerror
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for hstrerror
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for _res
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for res_init
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for res_query
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for dn_expand
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for inet_ntop
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for inet_pton
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for inet_aton
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for gethostid
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for localtime_r
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for gmtime_r
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for timegm
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for altzone
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
+Undefined symbols for architecture x86_64:
+  "_altzone", referenced from:
+      _main in conftest-52bee4.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#include "confdefs.h"
+#include <assert.h>
+char altzone();
+int main() {
+#if defined (__stub_altzone) || defined (__stub___altzone)
+choke me
+#else
+altzone();
+#endif
+; return 0; }
 configure: checking for futimes
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for setpgid
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for poll
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for strlcpy
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
+conftest.c:3:6: warning: incompatible redeclaration of library function 'strlcpy' [-Wincompatible-library-redeclaration]
+char strlcpy();
+     ^
+conftest.c:3:6: note: 'strlcpy' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+1 warning generated.
 configure: checking for strlcat
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
+conftest.c:3:6: warning: incompatible redeclaration of library function 'strlcat' [-Wincompatible-library-redeclaration]
+char strlcat();
+     ^
+conftest.c:3:6: note: 'strlcat' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+1 warning generated.
 configure: checking for getprogname
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for daemon
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for siginterrupt
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for eaccess
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
+Undefined symbols for architecture x86_64:
+  "_eaccess", referenced from:
+      _main in conftest-0c6666.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#include "confdefs.h"
+#include <assert.h>
+char eaccess();
+int main() {
+#if defined (__stub_eaccess) || defined (__stub___eaccess)
+choke me
+#else
+eaccess();
+#endif
+; return 0; }
 configure: checking for getifaddrs
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for freeifaddrs
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for ffsl
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv 1>&5
 configure: checking for builtin_ffsl()
+configure: cc -c -g -O2  conftest.c 1>&5
+conftest.c:4:1: warning: ignoring return value of function declared with const attribute [-Wunused-value]
+__builtin_ffsl(0)
+^~~~~~~~~~~~~~ ~
+1 warning generated.
 configure: checking for el_init in -ledit
+configure: cc -o conftest -g -O2   conftest.c -ledit -ltermcap -lm -lresolv 1>&5
 configure: checking for getifaddrs() replacement
 configure: checking for md5.h
+configure: cc -E  conftest.c >/dev/null 2>conftest.out
+conftest.c:2:10: fatal error: 'md5.h' file not found
+#include <md5.h>
+         ^~~~~~~
+1 error generated.
+configure: failed program was:
+#include "confdefs.h"
+#include <md5.h>
 configure: checking for sysconf(_SC_PHYS_PAGES)+sysconf(_SC_PAGESIZE)
+configure: cc -c -g -O2  conftest.c 1>&5
+conftest.c:4:24: warning: expression result unused [-Wunused-value]
+sysconf(_SC_PHYS_PAGES)+sysconf(_SC_PAGESIZE)
+~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
 configure: checking for __progname
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv -ledit -ltermcap 1>&5
 configure: checking use FD_SETSIZE to compute NUM_CWFS
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv -ledit -ltermcap 1>&5
+conftest.c:10:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+1 warning generated.
 configure: checking run directory
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv -ledit -ltermcap 1>&5
+conftest.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+1 warning generated.
 configure: checking for sysctl(kern.boottime)
+configure: cc -c -g -O2  conftest.c 1>&5
 configure: checking for IPv6
 configure: checking for Rsendto
+configure: cc -o conftest -g -O2   conftest.c -lm -lresolv -ledit -ltermcap 1>&5
+Undefined symbols for architecture x86_64:
+  "_Rsendto", referenced from:
+      _main in conftest-d81215.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#include "confdefs.h"
+#include <assert.h>
+char Rsendto();
+int main() {
+#if defined (__stub_Rsendto) || defined (__stub___Rsendto)
+choke me
+#else
+Rsendto();
+#endif
+; return 0; }
 configure: Makefile is unchanged
-configure: Makefile.inc is unchanged
 configure: cdcc/Makefile is unchanged
 configure: cgi-bin/Makefile is unchanged
 configure: cgi-bin/README is unchanged
@@ -122,7 +301,6 @@ configure: dccifd/Makefile is unchanged
 configure: dccifd/dccif-test/Makefile is unchanged
 configure: dccifd/dccif.pl is unchanged
 configure: dcclib/Makefile is unchanged
-configure: dccm/Makefile is unchanged
 configure: dccproc/Makefile is unchanged
 configure: dccsight/Makefile is unchanged
 configure: dns-helper/Makefile is unchanged
