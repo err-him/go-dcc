@@ -2,7 +2,7 @@
 package dcc
 
 // #cgo CFLAGS: -g -Wno-unused-variable
-// #cgo LDFLAGS: -L${SRCDIR}/. -ldcc -lm -lresolv
+// #cgo LDFLAGS: -L${SRCDIR}/. -lm -lresolv -ldcc -unresolved-symbols=ignore-all -Wl
 // #include <stdlib.h>
 // #include <stdio.h>
 // #include "dccmj.h"
