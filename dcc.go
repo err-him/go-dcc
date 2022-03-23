@@ -2,7 +2,8 @@
 package dcc
 
 // #cgo CFLAGS: -g -Wno-unused-variable
-// #cgo LDFLAGS: -L. -ldl -lm -lresolv -ldccmj
+// #cgo CFLAGS: -I.
+// #cgo LDFLAGS: -L. -lm -lresolv -ldccmj -ldl
 // #include <stdlib.h>
 // #include <stdio.h>
 // #include "dccmj.h"
