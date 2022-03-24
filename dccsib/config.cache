@@ -88,7 +88,7 @@ ac_cv_little_endian=${ac_cv_little_endian=yes}
 ac_cv_need_strings_h=${ac_cv_need_strings_h=no}
 ac_cv_num_cwfs=${ac_cv_num_cwfs=20}
 ac_cv_path_DCC_XARGS=${ac_cv_path_DCC_XARGS=/usr/bin/xargs}
-ac_cv_path_FETCH_CMD=${ac_cv_path_FETCH_CMD=/usr/bin/curl}
+ac_cv_path_FETCH_CMD=${ac_cv_path_FETCH_CMD=/usr/local/bin/wget}
 ac_cv_path_HTPASSWD=${ac_cv_path_HTPASSWD=/usr/sbin/htpasswd}
 ac_cv_path_NOTIFYMAILER=${ac_cv_path_NOTIFYMAILER=/usr/sbin/sendmail}
 ac_cv_path_PERL=${ac_cv_path_PERL=/usr/bin/perl}

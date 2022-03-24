@@ -81,9 +81,9 @@ endif%g
 s%@DCC_LOGGER@%logger -s -p ${DCC_ERROR_LOG_FACILITY-mail.err} -t ${LOGGER_TAG-DCC}%g
 s%@DCC_XARGS@%/usr/bin/xargs%g
 s%@LS_F@%f%g
-s%@FETCH_CMD@%/usr/bin/curl%g
+s%@FETCH_CMD@%/usr/local/bin/wget%g
 s%@FETCH_CMD_ADDR@%%g
-s%@FETCH_WGET_OPTS@% --referer=$HTTP_REFERER%g
+s%@FETCH_WGET_OPTS@% --referer=$HTTP_REFERER --tries=1%g
 s%@FETCH_CURL_OPTS@%--referer $HTTP_REFERER%g
 s%@PERL@%/usr/bin/perl%g
 s%@MANX@%$(MAN8)%g

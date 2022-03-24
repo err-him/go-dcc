@@ -30,7 +30,7 @@ HTTP_REFERER=DCC-1.3.163-script; export HTTP_REFERER
 DCC_HOMEDIR=/var/dcc
 SRVR_BL=dcc-servers-blacklist
 SRVRS=
-PGM=/usr/bin/curl
+PGM=/usr/local/bin/wget
 FORCE=
 MIRROR=
 
@@ -97,7 +97,7 @@ if test "$BASE_PGM" = wget; then
 	# At least some versions of wget exit with 0 after having done
 	#   nothing but emitting a usage message.
 	if $PGM -nd --retr-symlinks -N --no-host-directories		\
-		--passive-ftp  --referer=$HTTP_REFERER $URL >>$FLOG 2>&1; then
+		--passive-ftp  --referer=$HTTP_REFERER --tries=1 $URL >>$FLOG 2>&1; then
 	    if test -s $SRVR_BL; then
 		if test -z "`sed -n -e 2q				\
 			    -e 's/.*DOCTYPE.*/HTML/p'			\

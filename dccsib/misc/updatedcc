@@ -375,7 +375,7 @@ eval `echo "X $CONFS" | tr ' ' '\n'					\
 	| sed -n -e 's/^--with-fetch[-_]cmd=\(.*\)$/PGM=\1/p'		\
 		-e 's/^--without-fetch[-_]cmd$/PGM=""/p'`
 if test -z "$PGM"; then
-    PGM=/usr/bin/curl
+    PGM=/usr/local/bin/wget
 fi
 PGM_B=`basename $PGM`
 SUCCESS=
@@ -392,7 +392,7 @@ if test "$PGM_B" = wget; then
 	# At least some versions of wget exit with 0 after having done
 	#   nothing but emitting a usage message.
 	if $PGM $WGETQUIET -nd --no-host-directories -N \
-		--retr-symlinks --passive-ftp  --referer=$HTTP_REFERER "$URL"; then
+		--retr-symlinks --passive-ftp  --referer=$HTTP_REFERER --tries=1 "$URL"; then
 	    if test -s $DLTBALL; then
 		# notice if we get an HTTP error document with or without
 		# HTTP headers
