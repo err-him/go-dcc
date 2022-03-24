@@ -5,7 +5,7 @@ STATIC=libdccmj.a
 CC = gcc
 CFLAGS = -I./dccsib/include -Wall -Winline -pipe
 
-LDFLAGS = -L./
+LDFLAGS = -L. -ldccmj -static
 LDFLAGS = -Wl,--unresolved-symbols=ignore-in-object-files
 LDFLAGS = -Wl,-undefined,dynamic_lookup
 LIBS    = -lpthread -lm -lresolv

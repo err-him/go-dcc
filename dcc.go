@@ -1,6 +1,7 @@
 // Package dcc Package provides dcc common code.
 package dcc
 
+// #cgo CFLAGS: -g -Wno-unused-variable
 // #cgo CFLAGS: -I./dccsib/include
 // #cgo linux LDFLAGS: -ldl -Wl,--unresolved-symbols=ignore-in-object-files
 // #cgo darwin LDFLAGS: -ldl -Wl,-undefined,dynamic_lookup
