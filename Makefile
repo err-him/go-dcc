@@ -1,11 +1,11 @@
 DESTDIR=./
 
-STATIC=libdccmj.a
+STATIC=libdccmj.so
 
 CC = gcc
-CFLAGS = -I./dccsib/include -Wall -Winline -pipe
-
-LDFLAGS = -L. -static
+CFLAGS = -I./dccsib/include -fPIC -g #-pedantic -Wall -Wextra -ggdb3
+LDFLAGS = -L. -shared
+LDFLAGS = -Wl,-rpath=${SRCDIR}/
 LDFLAGS = -Wl,--unresolved-symbols=ignore-in-object-files
 LDFLAGS = -Wl,-undefined,dynamic_lookup
 LIBS    = -L. -lpthread -lm -lresolv -ldccmj

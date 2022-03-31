@@ -156,7 +156,7 @@ int fingerprint(char *message, char *checksum)
 
 	/* because stderr is often mixed with stdout and effectively
 	 * invisible, also complain to syslog */
-	//dcc_syslog_init(1, "libdccmj.so", 0);
+	dcc_syslog_init(1, "libdccmj.so", 0);
 	dcc_clear_tholds();
 	/* get ready for the IP and From header checksums */
 	cks_init(&cks);
