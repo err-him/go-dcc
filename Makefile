@@ -1,11 +1,11 @@
 DESTDIR=./
 
-STATIC=libdccmj.a
+STATIC=libdccmj.so
 
 CC = gcc
 CFLAGS = -I./dccsib/include -Wall -Winline -pipe
 
-LDFLAGS = -L. -static
+LDFLAGS = -L. -shared
 LDFLAGS = -Wl,--unresolved-symbols=ignore-in-object-files
 LDFLAGS = -Wl,-undefined,dynamic_lookup
 LIBS    = -L. -lpthread -lm -lresolv -ldccmj
@@ -24,7 +24,7 @@ $(STATIC): $(OBJ)
 	@$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	rm -f $(OBJ) *~ core tags *.bak Makefile.bak libgeniePi.*
+	rm -f $(OBJ) *~ core tags *.bak Makefile.bak libgeniePi.* *.o *.d
 
 .PHONY: install
 install: $(STATIC)

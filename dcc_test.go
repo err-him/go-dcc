@@ -1,6 +1,7 @@
 package dcc
 
 import (
+	"fmt"
 	"testing"
 )
 
