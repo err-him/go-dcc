@@ -1,10 +1,8 @@
 // Package dcc Package provides dcc common code.
 package dcc
 
-// #cgo CFLAGS: -I${SRCDIR}/
-// #cgo linux LDFLAGS: -ldl -Wl,--unresolved-symbols=ignore-in-object-files
-// #cgo darwin LDFLAGS: -ldl -Wl,-undefined,dynamic_lookup
-// #cgo LDFLAGS: -L${SRCDIR}/ -lm -lresolv -ldccmj
+// #cgo linux LDFLAGS: -ldl -Wl,--unresolved-symbols=ignore-in-object-files -L${SRCDIR}/ -l:libdccmj.a -L. -lpthread -lm -lresolv
+// #cgo darwin LDFLAGS: -ldl -Wl,-undefined,dynamic_lookup -L${SRCDIR}/ -ldccmj -L. -lpthread -lm -lresolv
 // #include <stdlib.h>
 // #include <stdio.h>
 // #include "dccmj.h"

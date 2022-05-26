@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2cd78f74-e528-4acf-9041-a38600648765" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccmj.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/aop.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ask.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/cdhome.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ck.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ck2str.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ckbody.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ckfuz1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ckfuz2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ckmime.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ckparse.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/cktbls.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/ckwhite.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/clnt_init.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/clnt_send.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/clnt_unthreaded.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/daemon.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/dnsbl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/escstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/get_id.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/get_secs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/getifaddrs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/hash_divisor.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/heap_debug.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/helper.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/id2str.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/inet_pton.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/load_ids.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/lock_open.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/md5.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/mkstemp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/msg2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/op2str.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/parse_log_opt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/parse_passwd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/parse_whitefile.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/print_info.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/range.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/restart.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/select_poll.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/sign.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/str2cnt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/str2type.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/tgts2str.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/type2str.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/udp_bind.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/clntlib/xhdr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/dccif.o" beforeDir="false" afterPath="$PROJECT_DIR$/dccsib/dcclib/dccif.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/fnm.o" beforeDir="false" afterPath="$PROJECT_DIR$/dccsib/dcclib/fnm.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/get_port.o" beforeDir="false" afterPath="$PROJECT_DIR$/dccsib/dcclib/get_port.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/ipv6_conv.o" beforeDir="false" afterPath="$PROJECT_DIR$/dccsib/dcclib/ipv6_conv.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/mk_su.o" beforeDir="false" afterPath="$PROJECT_DIR$/dccsib/dcclib/mk_su.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/msg1.o" beforeDir="false" afterPath="$PROJECT_DIR$/dccsib/dcclib/msg1.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/parse_srvr_nm.o" beforeDir="false" afterPath="$PROJECT_DIR$/dccsib/dcclib/parse_srvr_nm.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/parse_word.o" beforeDir="false" afterPath="$PROJECT_DIR$/dccsib/dcclib/parse_word.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/strlcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/strlcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/su2str.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/vsyslog.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dccsib/dcclib/win32.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libdccmj.a" beforeDir="false" afterPath="$PROJECT_DIR$/libdccmj.a" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="29K9X6RpZZmKpLBEyHFuUvn8pfL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TestChecksumGenerator in github.com/err-him/go-dcc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-dcc" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/err-him/go-dcc" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestChecksumGenerator\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestChecksumGenerator in github.com/err-him/go-dcc" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

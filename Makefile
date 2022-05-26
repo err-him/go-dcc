@@ -1,10 +1,10 @@
 DESTDIR=./
 
-STATIC=libdccmj.a
-
+STATIC=libdccmj.so
+INCLUDE = dccsib/include
 CC = gcc
-CFLAGS = -I./dccsib/include -Wall -g #-pedantic -Wall -Wextra -ggdb3
-LDFLAGS = -L. libtool -static
+CFLAGS =  -I$(INCLUDE) -g -Wl,--no-as-needed -Wall -Wextra -std=gnu99 #-pedantic-errors
+LDFLAGS = -L. libtool --shared -a
 LDFLAGS = -Wl,-rpath=${SRCDIR}/
 LDFLAGS = -Wl,--unresolved-symbols=ignore-in-object-files
 LDFLAGS = -Wl,-undefined,dynamic_lookup
@@ -17,7 +17,7 @@ OBJ = $(SRC:.c=.o)
 $(STATIC): $(OBJ)
 	@echo "[Link (Static)]"
 	cd dccsib && ./configure --disable-dccm && cd ..
-	@ar rcs $@ $^
+	ar crv $@ $^
 
 .c.o:
 	@echo [Compile] $<
