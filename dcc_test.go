@@ -1,6 +1,7 @@
 package dcc
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -10,4 +11,5 @@ func TestChecksumGenerator(t *testing.T) {
 	if checksum == "" {
 		t.Fatalf("unexpected checksum")
 	}
+	fmt.Println(checksum)
 }
